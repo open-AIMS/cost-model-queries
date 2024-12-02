@@ -74,14 +74,14 @@ wheels = [
 ]
 
 [[package]]
-name = "cost-model-queries"
-version = "0.1.1"
+name = "cost_model_queries"
+version = "0.0.3"
 source = { editable = "." }
 dependencies = [
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "pandas" },
-    { name = "pywin32" },
+    { name = "pywin32", marker = "sys_platform == 'windows'" },
     { name = "salib" },
     { name = "seaborn" },
     { name = "statsmodels" },
@@ -92,7 +92,6 @@ requires-dist = [
     { name = "matplotlib", specifier = ">=3.9.2" },
     { name = "numpy", specifier = ">=2.1.3" },
     { name = "pandas", specifier = ">=2.2.3" },
-    { name = "pywin32", specifier = "==305" },
     { name = "pywin32", marker = "sys_platform == 'windows'", specifier = ">=305" },
     { name = "salib", specifier = ">=1.5.1" },
     { name = "seaborn", specifier = ">=0.13.2" },
@@ -536,14 +535,6 @@ wheels = [
 name = "pywin32"
 version = "305"
 source = { registry = "https://pypi.org/simple" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/65/e4/76dab43949fc3ba9aee8dc0635b299ad09df7813e81aa4adc88e27f463fe/pywin32-305-cp310-cp310-win32.whl", hash = "sha256:421f6cd86e84bbb696d54563c48014b12a23ef95a14e0bdba526be756d89f116", size = 10990975 },
-    { url = "https://files.pythonhosted.org/packages/02/80/23fdb88f8a398dff615f10100cf54871fd8518e3eeea72c1a7d46af01bf9/pywin32-305-cp310-cp310-win_amd64.whl", hash = "sha256:73e819c6bed89f44ff1d690498c0a811948f73777e5f97c494c152b850fad478", size = 12136144 },
-    { url = "https://files.pythonhosted.org/packages/05/19/e1f2d772c5437f37c7dbe88be56939de53f040674b6accf2c0369674873d/pywin32-305-cp310-cp310-win_arm64.whl", hash = "sha256:742eb905ce2187133a29365b428e6c3b9001d79accdc30aa8969afba1d8470f4", size = 11199128 },
-    { url = "https://files.pythonhosted.org/packages/66/e8/0078d6042bf5bce7e2518b32cf1a0c1399a64f91fc280bb1cfda69fcdb35/pywin32-305-cp311-cp311-win32.whl", hash = "sha256:19ca459cd2e66c0e2cc9a09d589f71d827f26d47fe4a9d09175f6aa0256b51c2", size = 10992077 },
-    { url = "https://files.pythonhosted.org/packages/22/da/344b3df042f42d9d775ae2030276b2992adab519c6d682393ddf356775f3/pywin32-305-cp311-cp311-win_amd64.whl", hash = "sha256:326f42ab4cfff56e77e3e595aeaf6c216712bbdd91e464d167c6434b28d65990", size = 12137015 },
-    { url = "https://files.pythonhosted.org/packages/a2/df/cb14fa23ef0782e62df7b33ea2b926150de3b1d71d2713f434582f8a0024/pywin32-305-cp311-cp311-win_arm64.whl", hash = "sha256:4ecd404b2c6eceaca52f8b2e3e91b2187850a1ad3f8b746d0796a98b4cea04db", size = 11198967 },
-]
 
 [[package]]
 name = "salib"
